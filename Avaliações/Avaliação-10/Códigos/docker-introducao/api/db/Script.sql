@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS testedocker;
+USE testedocker;
+
+CREATE TABLE IF NOT EXISTS products (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL);
+
+INSERT INTO products VALUE(1, 'CURSO Front-end', 2500);
+
+INSERT INTO products VALUE(2, 'CURSO JS', 900);
